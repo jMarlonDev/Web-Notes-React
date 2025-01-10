@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+body {
+  background: #C4F0D7;
+}
+
+h1 {
+  color: #343430;
+}
+
+.note {
+  padding-top: 5px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  color: #504C45;
+}
+
+form {
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputNote {
+  width: 60%;
+  text-align: center;
+  background: #222;
+  border-radius: 3px;
+  border: none;
+}
+
+.inputNote:focus {
+  outline: none;
+}
+
+/* Siempre que yo quiera definir una altura maxima y que ese contenido se quede estatico y se haga como un scroll en lo selemtnos debo hacerlo asi */
+ul {
+  background: #E6E8E5;
+  border: 3px solid #333031;
+  border-radius: 15px;
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(53, 52, 48, 1);
+  -moz-box-shadow: 8px 8px 5px 0px rgba(53, 52, 48, 1);
+  box-shadow: 8px 8px 5px 0px rgba(53, 52, 48, 1);
+  /* Ocultar barra de desplazamiento visualmente */
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: transparent transparent;
+  /* Firefox */
+}
+
+
+ul::-webkit-scrollbar {
+  width: 0;
+  /* Ocultar barra (Webkit) */
+}
+
+ul:hover::-webkit-scrollbar {
+  width: 8px;
+  /* Mostrar barra al pasar el cursor */
+  background-color: transparent;
+  /* Fondo transparente */
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #333031;
+  /* Color del "pulgar" de la barra */
+  border-radius: 10px;
+  /* Redondear borde */
+}

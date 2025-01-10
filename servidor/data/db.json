@@ -1,0 +1,30 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "content": "html is a hypertext markup language for elements on the web.",
+      "important": true
+    },
+    {
+      "id": 2,
+      "content": "Browser can execute only JavaScript",
+      "important": false
+    },
+    {
+      "id": 3,
+      "content": "GET and POST are the most important methods of http protocol",
+      "important": false
+    },
+    {
+      "id": 4,
+      "content": "Css is a stylesheet",
+      "important": false
+    },
+    {
+      "id": 5,
+      "content": "REST significa transferencia de estado representacional ",
+      "important": false
+    }
+    
+  ]
+}
