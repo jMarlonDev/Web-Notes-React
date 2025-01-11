@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const urlNotes = "http://localhost:3001/api/notes";
+const urlNotes = "https://servidor-7kxa.onrender.com/api/notes";
 
 async function getAllNotes (){
   const request = axios.get(urlNotes);

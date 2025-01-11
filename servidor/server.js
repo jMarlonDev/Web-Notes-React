@@ -4,13 +4,14 @@ const notes = notesJSON.notes;
 const app = express();
 const cors = require("cors");
 
-/* Variable de configuracion para definir la variable que va a contener el valor 
- * del puerto donde se va a ejecutar el servidor*/
-app.set("port", 3001);
-
 /* middlewares */
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+    origin: "*", // Permitir cualquier dominio
+}));
+
+
 /* Solicitudes o rutas*/
 
 app.get("/api/notes", (request, response) => {
@@ -43,6 +44,8 @@ app.put("/api/notes/:id", (request, response) => {
 })
 
 
+const PORT = process.env.PORT || 3001;
 
-app.listen(app.get("port"));
-console.log("El servidor esta prendido en el puerto 3001");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+})
